@@ -5,7 +5,7 @@ import React from 'react'
 const Sidebar = ({mode,setMode}) => {
   return (
     <Box p={2} flex={2}  sx={{display:{xs:'none',sm:'block'}}}>
-      {/* <Box position={'fixed'}> */}
+      <Box position={'fixed'}>
         <List>
           <ListItem disablePadding>
             <ListItemButton component="a" href="#home">
@@ -72,7 +72,7 @@ const Sidebar = ({mode,setMode}) => {
             </ListItemButton>
           </ListItem>
         </List>
-        {/* </Box> */}
+        </Box>
     </Box>
   )
 }

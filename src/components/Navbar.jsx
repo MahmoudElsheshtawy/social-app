@@ -36,7 +36,7 @@ const UserBox =styled(Box)(({theme})=>({
 const Navbar = () => {
   const [open,setopen]=useState(false)
   return (
-    <AppBar position="static">
+    <AppBar position='sticky'>
         <StyledToolbar>
             
             <DeblurIcon sx={{fontSize:'35px'}}/>
@@ -60,8 +60,8 @@ const Navbar = () => {
              
         </StyledToolbar>
         <Menu 
-        id="demo-positioned-menu"
-        aria-labelledby="demo-positioned-button"
+              id="demo-positioned-menu"
+              aria-labelledby="demo-positioned-button"
         // anchorEl={anchorEl}
         open={open}
         onClose={()=>setopen(!open)}
